@@ -4,7 +4,9 @@ sys.stdin=open("input.txt", "rt")
 n = int(input())
 a = list(map(int, input().split()))
 
-ave = round(sum(a) / n)
+ave = (sum(a) / n) + 0.5 # round() 함수 삭제
+a = int(a)
+
 aMin = 2147000000
 
 for idx, x in enumerate(a):
