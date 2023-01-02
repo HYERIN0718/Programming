@@ -2,6 +2,8 @@ import sys
 sys.stdin=open("input.txt", "rt")
 
 a, b = map(int, input().split())
+
+# 나올 수 있는 수 만큼의 배열 크기 초기화하기
 cnt = [0]*(a + b + 3)
 aMax = 0
 
