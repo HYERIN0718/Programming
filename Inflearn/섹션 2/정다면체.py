@@ -16,6 +16,11 @@ for i in range(1, a + 1):
 for i in range(a + b + 1):
     if cnt[i] > aMax:
         aMax = cnt[i]
+        
+# cnt배열에서 가장 큰 값(= 확률이 높은 숫자) 찾기
+''' 
+aMax = max(cnt)
+'''
 
 # 오름차순으로 출력
 for i in range(a + b + 1):
