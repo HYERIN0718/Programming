@@ -8,6 +8,8 @@ arr = [0] * (n + 1)
 cnt = 0
 
 for i in range(2, n + 1):
+    
+    # 처음 숫자인 2는 소수이므로 0값을 가지게 됨
     if arr[i] == 0:
         cnt += 1
         
