@@ -21,6 +21,8 @@ def isPrime(x):
       
     # 소수는 입력받은 숫자의 절반까지 해당됨
     for i in range(2, x // 2 + 1):
+        
+        # x는 함수호출할 때 불러오기 때문에 따로 입력할 필요 없음
         if x % i == 0:
             return False
         else:
