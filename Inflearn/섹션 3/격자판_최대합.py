@@ -21,7 +21,7 @@ sum1 = sum2 = 0
 for i in range(n):
     # 대각선
     sum1 += a[i][i]
-    # 대각선 반대
+    # 대각선 반대 & j열 : n-i-1 (-1해줘야됨)
     sum2 += a[i][n-i-1]
 if sum1 > largest:
     largest = sum1
