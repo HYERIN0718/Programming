@@ -16,6 +16,7 @@ for i in range(m):
             # pop() : 마지막 인덱스 값 출력
             a[b-1].insert(0, a[b-1].pop())
 
+            
 count = 0
 s = 0
 e = n - 1 
