@@ -12,7 +12,7 @@ for i in range(n):
     for j in range(s, e+1):
         count += arr[i][j]
     
-    # i가 n//2보다 더 작으면 시작점은 더 작아지고, 종료점은 더 커짐
+    # i(행)가 n//2보다 더 작으면 시작점은 더 작아지고, 종료점은 더 커짐
     if i < n//2:
         s -= 1
         e += 1
