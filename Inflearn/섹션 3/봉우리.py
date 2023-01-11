@@ -21,6 +21,8 @@ for i in range(n+2):
 # 상하좌우 보다 큰 수 찾기
 for i in range(1, n+1):
     for j in range(1, n+1):
+        
+        # for문을 통해서 k값을 하나씩 삽입 후 덧셈
         if all(a[i][j] > a[i+dx[k]][j+dy[k]] for k in range(4)):
             count += 1
 print(count)
