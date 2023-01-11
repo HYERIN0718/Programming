@@ -23,6 +23,7 @@ for i in range(1, n+1):
     for j in range(1, n+1):
         
         # for문을 통해서 k값을 하나씩 삽입 후 덧셈
+        # if all() : ()안의 조건문이 모두 만족해야 true
         if all(a[i][j] > a[i+dx[k]][j+dy[k]] for k in range(4)):
             count += 1
 print(count)
