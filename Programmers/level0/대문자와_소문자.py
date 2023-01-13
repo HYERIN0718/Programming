@@ -1,10 +1,11 @@
 def solution(my_string):
 
-    answer = list(map(str, str(my_string)))
-    for i in range(len(answer)):
-        if answer[i].isupper() == True:
-            answer[i] = answer[i].lower()
+    answer = ''
+    
+    for i in range(len(my_string)):
+        if my_string[i].isupper() :
+            answer += my_string[i].lower()
         else:
-            answer[i] = answer[i].upper()
+            answer += my_string[i].upper()
         
-    return ''.join(answer)
+    return answer
