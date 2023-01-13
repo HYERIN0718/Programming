@@ -9,5 +9,13 @@ def solution(s):
     for i in range(len(arr1)):
         if arr1[i] == 1:
             arr2 += chr(i+97)
-        
+            
     return arr2
+
+# 숏코딩
+'''def solution(s):
+    answer = ''
+    for c in 'abcdefghijklmnopqrstuvwxyz':
+        if s.count(c) == 1:
+            answer += c
+    return answer '''
