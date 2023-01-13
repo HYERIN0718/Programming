@@ -1,12 +1,8 @@
 def solution(numbers, direction):
-    answer = []
+    answer = list(map(int, numbers))
     
-    if direction == "left":
-        s = numbers[0]
-        del numbers[0]
-        numbers.insert(len(numbers), s)
-    elif direction == "right":
-        s = numbers[len(numbers) - 1]
-        del numbers[len(numbers) - 1]
-        numbers.insert(0, s)
-    return numbers
+    if direction == "right":
+        answer.insert(0, answer.pop())
+    else:
+        answer.append(answer.pop(0))
+    return answer
