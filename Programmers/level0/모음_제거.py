@@ -1,11 +1,11 @@
 def solution(my_string):
     answer = ''
-    arr = ['a', 'e', 'o', 'i', 'u']
-    arr_list = list(map(str, str(my_string)))
-    list_answer = []
     
-    for i in range(len(arr_list)):
-        if arr_list[i] not in arr:
-            list_answer.append(arr_list[i])
-    answer = ''.join(list_answer)
+    arr = list(map(str, str(my_string)))
+    
+    for i in range(len(arr)):
+        if arr[i] not in 'aeiou':
+            
+            # 문자열 덧셈 가능
+            answer += arr[i]
     return answer
